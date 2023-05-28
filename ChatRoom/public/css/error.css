@@ -1,0 +1,33 @@
+/* error page css */
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+/* resetting default margin and padding */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    background: tomato;
+    color: white;
+}
+/* Container containing the message */
+#error_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* 404 */
+h1{
+    font-size: 7rem;
+}
+/* Not Found */
+h6{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 25px;
+}

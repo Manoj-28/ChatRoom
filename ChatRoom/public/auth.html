@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/auth.css">
+    <script src="/js/env.js" defer></script>
+    <script src="/js/auth.js" defer></script>
+</head>
+
+<body>
+    <section id="main">
+        <div id="container">
+            <div class="form_box1">
+                <form id="login-form">
+                    <h1>SIGN IN</h1>
+                    <input type="email" name="email" placeholder="Email Addres">
+                    <input type="password" name="password" placeholder="Password">
+                    <input type="submit" value="Login" id="btn1" class="btn">
+                    <p class="signup_link">Don't have an account? <a href="#" onclick="toggleForm();">SIGN UP.</a>
+                    </p>
+                </form>
+            </div>
+            <div class="form_box2">
+                <form id="signup-form">
+                    <h1>Create an Account</h1>
+                    <input type="text" name="username" placeholder="Username" maxlength="10">
+                    <input type="email" name="email" placeholder="Email Addres">
+                    <input type="password" name="password" placeholder="Password">
+                    <input type="submit" value="Sign Up" id="btn2" class="btn">
+                    <p class="signin_link">Already have an account? <a href="#" onclick="toggleForm();">SIGN IN.</a>
+                    </p>
+                </form>
+            </div>
+
+            <div id="image">
+                <img src="/images/login.png" alt="chat image">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

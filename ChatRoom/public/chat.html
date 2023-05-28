@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Chat Room</title>
+	<link rel="stylesheet" href="css/chat.css" />
+	<!--QUERY STRING -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+		integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous" defer></script>
+	<!--CLIENT SIDE SOCKETS -->
+	<script src="/socket.io/socket.io.js" defer></script>
+	<script src="js/env.js" defer></script>
+	<script src="js/chat.js" defer></script>
+</head>
+
+<body>
+	<section id="main">
+		<div id="container">
+			<div id="my-modal" class="modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<span class="close">&times;</span>
+						<h2>Create Room</h2>
+					</div>
+					<div class="modal-body">
+						<form id="room_form">
+							<input id="name" name="name" type="text" maxlength="12" placeholder="Enter Room name"
+								required autocomplete="off" />
+							<div id="room_btn">
+								<button class="button">Create</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="room">
+				<nav id="nav1" class="navbar">
+					<div id="logo">
+						<img src="/images/logo.png" alt="logo image" />
+					</div>
+					<div>Rooms</div>
+					<span id="create_room">&plus;</span>
+				</nav>
+
+
+			</div>
+			<div id="welcome" class="hide">
+			</div>
+			<div class="chat">
+				<nav id="nav2" class="navbar">
+					<div id="room-name">Welcome</div>
+					<!-- ADD NAME AND LOGOUT BUTTON -->
+					<button id="logout">logout</button>
+				</nav>
+
+				<div class="chat-messages"></div>
+				<div class="chat-form-container">
+					<form id="chat-form">
+						<input id="msg" type="text" placeholder="Enter Message" required autocomplete="off" />
+						<button class="btn">Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+
+</html>
